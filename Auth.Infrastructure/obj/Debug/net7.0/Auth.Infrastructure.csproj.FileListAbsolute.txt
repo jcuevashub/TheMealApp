@@ -1,7 +1,10 @@
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\bin\Debug\net7.0\Auth.Infrastructure.deps.json
+C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\bin\Debug\net7.0\Auth.Infrastructure.runtimeconfig.json
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\bin\Debug\net7.0\Auth.Infrastructure.dll
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\bin\Debug\net7.0\Auth.Infrastructure.pdb
+C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\bin\Debug\net7.0\Auth.Application.dll
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\bin\Debug\net7.0\Auth.Core.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\bin\Debug\net7.0\Auth.Application.pdb
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\bin\Debug\net7.0\Auth.Core.pdb
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\obj\Debug\net7.0\Auth.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\obj\Debug\net7.0\Auth.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
@@ -13,4 +16,5 @@ C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\obj\Debug\net7.0\
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\obj\Debug\net7.0\Auth.Infrastructure.dll
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\obj\Debug\net7.0\refint\Auth.Infrastructure.dll
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\obj\Debug\net7.0\Auth.Infrastructure.pdb
+C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\obj\Debug\net7.0\Auth.Infrastructure.genruntimeconfig.cache
 C:\Users\jacks\Documents\GitHub\TheMealApp\Auth.Infrastructure\obj\Debug\net7.0\ref\Auth.Infrastructure.dll

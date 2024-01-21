@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TFXMPrXgVs8UQ+IoHILE3waYguGPWXNMCNhI3mp1/fQ7c1hLIRQ69v0lcFFy74OqKcI6KLfJzpBumhjWVc72jw==",
+  "dgSpecHash": "L05bAPa4jqRtoF6UCfEUpT1ZBh8QrMNl8EDVNa20frEmRxevbLUDkB2YPlYY/B+CMCc+nY3miWeFLuLZfRK5qg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jacks\\Documents\\GitHub\\TheMealApp\\Notifications.API\\Notifications.API.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,8 @@
     "C:\\Users\\jacks\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
-    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
   ],

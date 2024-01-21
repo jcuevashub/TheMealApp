@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tf54/8/S7y5iUuhi9ZaoscW0eh+6uo2+UiAYBjQA55lx3+Z7Ft1vM4aKClGOgubC8D+hU5sxufoDKcl7Iz4kgA==",
+  "dgSpecHash": "uPu1K7oAIlqF433+3tl7hUivGmgBvBR9YGosl7ETithy+YFNiAqvDrlp1y0YoZEt6E7eW3x6/l9+YG7Pkot9+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\jacks\\Documents\\GitHub\\TheMealApp\\Email.API\\Email.API.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,8 @@
     "C:\\Users\\jacks\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
-    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
   ],

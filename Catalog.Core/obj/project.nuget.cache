@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iHZuQm2G0JYupyDjWUq2GWGCa6sH55kIvYNMv4WMwmrqMf3YAtt+5GcurPFccXXrEc+je+roaM+Hwa/AKp3KIg==",
+  "dgSpecHash": "tBrWbHhLF4Qc1CZcJA63hkrtItt3mnrNeINzSXEu6glhvZQna3SPDh5lJ4WQtObgPV7utYIer2tOwKOt/QTXNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jacks\\Documents\\GitHub\\TheMealApp\\Catalog.Core\\Catalog.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\jacks\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
   ],
   "logs": []
