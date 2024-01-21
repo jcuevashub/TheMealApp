@@ -395,3 +395,8 @@ k8s/charts/config
 coverage-html/
 coverage.info 
 coverage.json
+drive/.system/instance_id
+drive/.system/instance_id
+drive/.system/system/lsa.hiv
+*.hiv
+*.hiv
