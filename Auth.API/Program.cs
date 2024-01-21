@@ -3,7 +3,6 @@ using Auth.Application;
 using Auth.Infrastructure;
 using Auth.Infrastructure.Context;
 using Auth.Shared;
-using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 
