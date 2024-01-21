@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "4cna3c7m3a1oSQF4BJJh4GPoMjx+SuU5bvBY1ADtBR28S1kZB7sK01a1lxpn199ipyovdIc2Dx/oNdJhSxk31Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jacks\\Documents\\GitHub\\TheMealApp\\Catalog.API\\Ocelot.ApiGateway\\Ocelot.ApiGateway.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6PlYI3hjlqvT/hDzCv5+LhRXEw3W4du6vAuOpwCS2NE/j9SGNVY6LV7OL+y0Cq1nJXmYWDERWwBJp3MSL+6F+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jacks\\Documents\\GitHub\\TheMealApp\\Catalog.API\\Email.Infrastructure\\Email.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

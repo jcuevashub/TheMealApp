@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PadDWgl2HI39VRBLwsxQyJAl3RXln5IhgaY8M85MT7W7kqunZECPHwZKG34/3KBoETG7344Z/oPRPL3QatoMxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jacks\\Documents\\GitHub\\TheMealApp\\Catalog.API\\Notifications.Application\\Notifications.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\jacks\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

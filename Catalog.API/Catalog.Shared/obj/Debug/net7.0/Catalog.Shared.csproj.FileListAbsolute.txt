@@ -1,0 +1,12 @@
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\bin\Debug\net7.0\Catalog.Shared.deps.json
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\bin\Debug\net7.0\Catalog.Shared.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\bin\Debug\net7.0\Catalog.Shared.pdb
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\Catalog.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\Catalog.Shared.AssemblyInfoInputs.cache
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\Catalog.Shared.AssemblyInfo.cs
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\Catalog.Shared.csproj.CoreCompileInputs.cache
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\Catalog.Shared.sourcelink.json
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\Catalog.Shared.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\refint\Catalog.Shared.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\Catalog.Shared.pdb
+C:\Users\jacks\Documents\GitHub\TheMealApp\Catalog.API\Catalog.Shared\obj\Debug\net7.0\ref\Catalog.Shared.dll
