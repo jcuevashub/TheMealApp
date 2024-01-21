@@ -31,7 +31,7 @@ public sealed class AuthenticationService : IAuthenticationService
         _userTokenRepositoryAsync = userTokenRepositoryAsync;
     }
 
-    public async Task<Response<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request)
+    public async Task<ResponseR<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request)
     {
         try
         {
@@ -53,7 +53,7 @@ public sealed class AuthenticationService : IAuthenticationService
         }
     }
 
-    public async Task<Response<AuthenticationResponse>> AuthenticationResponse(User? user, string message)
+    public async Task<ResponseR<AuthenticationResponse>> AuthenticationResponse(User? user, string message)
     {
         var jwtSecurityToken = await GenerateJwToken(user);
         var jwtToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
@@ -72,10 +72,10 @@ public sealed class AuthenticationService : IAuthenticationService
             ExpiresIn = userToken.Expires.ToString("yyyyMMddHHmmss")
         };
 
-        return new Response<AuthenticationResponse>(response, message);
+        return new ResponseR<AuthenticationResponse>(response, message);
     }
 
-    public async Task<Response<string>> ForgotPasswordAsync(ForgotPasswordRequest request)
+    public async Task<ResponseR<string>> ForgotPasswordAsync(ForgotPasswordRequest request)
     {
         var user = (await _userRepositoryAsync.FindByCondition(x => x!.Email == request.Email)
             .ConfigureAwait(false)).AsQueryable().FirstOrDefault();
@@ -92,10 +92,10 @@ public sealed class AuthenticationService : IAuthenticationService
 
         await _userRepositoryAsync.UpdateAsync(user).ConfigureAwait(false);
 
-        return new Response<string>(true, "Please check your email for password reset instructions.");
+        return new ResponseR<string>(true, "Please check your email for password reset instructions.");
     }
 
-    public async Task<Response<AuthenticationResponse>> RefreshTokenAsync(RefreshTokenRequest request)
+    public async Task<ResponseR<AuthenticationResponse>> RefreshTokenAsync(RefreshTokenRequest request)
     {
 
         var userToken =
@@ -134,10 +134,10 @@ public sealed class AuthenticationService : IAuthenticationService
             ExpiresIn = userTokenNew.Expires.ToString("yyyyMMddHHmmss")
         };
 
-        return new Response<AuthenticationResponse>(response, "Token Refreshed Successful.");
+        return new ResponseR<AuthenticationResponse>(response, "Token Refreshed Successful.");
     }
 
-    public async Task<Response<AuthenticationResponse>> ResetPasswordAsync(ResetPasswordRequest request)
+    public async Task<ResponseR<AuthenticationResponse>> ResetPasswordAsync(ResetPasswordRequest request)
     {
 
         var user = await _userRepositoryAsync.GetByIdAsync(request.Id);
@@ -160,7 +160,7 @@ public sealed class AuthenticationService : IAuthenticationService
     }
 
 
-    public async Task<Response<string>> RevokeTokenAsync(RevokeTokenRequest request)
+    public async Task<ResponseR<string>> RevokeTokenAsync(RevokeTokenRequest request)
     {
         var userToken =
             (await _userTokenRepositoryAsync.FindByCondition(x => x!.Token == request.Token).ConfigureAwait(false))
@@ -178,7 +178,7 @@ public sealed class AuthenticationService : IAuthenticationService
         userToken!.RevokedDate = DateTime.UtcNow;
         await _userTokenRepositoryAsync.UpdateAsync(userToken).ConfigureAwait(false);
 
-        return new Response<string>("Token Revoked Successful.");
+        return new ResponseR<string>("Token Revoked Successful.");
     }
 
     private Task<JwtSecurityToken> GenerateJwToken(User? user)

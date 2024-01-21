@@ -1,9 +1,15 @@
-var builder = WebApplication.CreateBuilder(args);
+using Hangfire;
+using Email.Application;
+using Email.Infrastructure;
+using Email.Shared;
 
-// Add services to the container.
+
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.ConfigurePersistence(builder.Configuration);
+builder.Services.ConfigureApplication();
+builder.Services.AddSharedInfrastructure(builder.Configuration);
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -15,6 +21,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseHangfireDashboard();
 
 app.UseHttpsRedirection();
 

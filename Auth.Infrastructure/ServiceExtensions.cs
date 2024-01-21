@@ -35,7 +35,7 @@ public static class ServiceExtensions
             //    outbox.UseBusOutbox();
             //});
 
-            x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("users", false));
+            x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("auth", false));
 
             // Setup RabbitMQ Endpoint
             x.UsingRabbitMq((context, cfg) =>
@@ -55,6 +55,7 @@ public static class ServiceExtensions
             options.EnableSensitiveDataLogging();
 
         });
+
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));

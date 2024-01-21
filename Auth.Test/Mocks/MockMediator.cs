@@ -37,7 +37,7 @@ public static class MockMediator
         var mockMediator = new Mock<IMediator>();
 
         mockMediator.Setup(m => m.Send(It.IsAny<CreateUserRequest>(), It.IsAny<CancellationToken>()))
-            .ReturnsAsync(new Response<AuthenticationResponse>(expectedResponse));
+            .ReturnsAsync(new ResponseR<AuthenticationResponse>(expectedResponse));
 
         return mockMediator;
     }

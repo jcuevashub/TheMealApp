@@ -1,6 +1,6 @@
 ﻿namespace Auth.Application.Wrappers;
 
-public class PagedResponse<T> : Response<T>
+public class PagedResponse<T> : ResponseR<T>
 {
     public int PageNumber { get; set; }
     public int PageSize { get; set; }

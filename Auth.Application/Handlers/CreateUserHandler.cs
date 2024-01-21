@@ -5,12 +5,14 @@ using Auth.Application.Interfaces.Services;
 using Auth.Application.Wrappers;
 using Auth.Core.Entities;
 using AutoMapper;
+using EventBus.Messages.Events;
+using MassTransit;
 using MediatR;
 using System.ComponentModel.DataAnnotations;
 
 namespace Auth.Application.Handlers;
 
-public sealed class CreateUserHandler : IRequestHandler<CreateUserRequest, Response<AuthenticationResponse>>
+public sealed class CreateUserHandler : IRequestHandler<CreateUserRequest, ResponseR<AuthenticationResponse>>
 {
     private readonly IAuthenticationService _authenticationService;
     private readonly IMapper _mapper;
@@ -18,13 +20,15 @@ public sealed class CreateUserHandler : IRequestHandler<CreateUserRequest, Respo
 
     private readonly IUnitOfWork _unitOfWork;
     private readonly IUserRepositoryAsync _userRepositoryAsync;
+    private readonly IPublishEndpoint _publishEndpoint;
 
     public CreateUserHandler(
         IUnitOfWork unitOfWork,
         IUserRepositoryAsync userRepositoryAsync,
         IMapper mapper,
         IPasswordService passwordService,
-        IAuthenticationService authenticationService
+        IAuthenticationService authenticationService,
+        IPublishEndpoint publishEndpoint
     )
     {
         _unitOfWork = unitOfWork;
@@ -32,9 +36,11 @@ public sealed class CreateUserHandler : IRequestHandler<CreateUserRequest, Respo
         _mapper = mapper;
         _passwordService = passwordService;
         _authenticationService = authenticationService;
+        _publishEndpoint = publishEndpoint;
+
     }
 
-    public async Task<Response<AuthenticationResponse>> Handle(CreateUserRequest request,
+    public async Task<ResponseR<AuthenticationResponse>> Handle(CreateUserRequest request,
         CancellationToken cancellationToken)
     {
         var userFound = (await _userRepositoryAsync.FindByCondition(x => x.Email.ToLower() == request.Email.ToLower()).ConfigureAwait(false)).AsQueryable().FirstOrDefault();
@@ -56,6 +62,8 @@ public sealed class CreateUserHandler : IRequestHandler<CreateUserRequest, Respo
         await _userRepositoryAsync.AddAsync(user);
         await _unitOfWork.Save(cancellationToken);
 
-        return await _authenticationService.AuthenticationResponse(user, "");
+        await _publishEndpoint.Publish(_mapper.Map<UserCreated>(request));
+
+        return await _authenticationService.AuthenticationResponse(user, "User Created");
     }
 }

@@ -9,4 +9,4 @@ public sealed record CreateUserRequest(
  string FirstName,
  string LastName,
  string Email
-) : IRequest<Response<AuthenticationResponse>>;
+) : IRequest<ResponseR<AuthenticationResponse>>;

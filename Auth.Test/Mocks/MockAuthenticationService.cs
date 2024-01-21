@@ -41,19 +41,19 @@ public static class MockAuthenticationService
         };
 
         mockAuthenticationService.Setup(service => service.AuthenticateAsync(It.IsAny<AuthenticationRequest>()))
-            .ReturnsAsync(new Response<AuthenticationResponse>(expectedResponse, "Login Success"));
+            .ReturnsAsync(new ResponseR<AuthenticationResponse>(expectedResponse, "Login Success"));
 
         mockAuthenticationService.Setup(service => service.RefreshTokenAsync(It.IsAny<RefreshTokenRequest>()))
-            .ReturnsAsync(new Response<AuthenticationResponse>(expectedResponse, "Token Refreshed Successful."));
+            .ReturnsAsync(new ResponseR<AuthenticationResponse>(expectedResponse, "Token Refreshed Successful."));
 
         mockAuthenticationService.Setup(service => service.RevokeTokenAsync(It.IsAny<RevokeTokenRequest>()))
-            .ReturnsAsync(new Response<string>("Token Revoked Successful."));
+            .ReturnsAsync(new ResponseR<string>("Token Revoked Successful."));
 
         mockAuthenticationService.Setup(service => service.ForgotPasswordAsync(It.IsAny<ForgotPasswordRequest>()))
-            .ReturnsAsync(new Response<string>("Please check your email for password reset instructions."));
+            .ReturnsAsync(new ResponseR<string>("Please check your email for password reset instructions."));
 
         mockAuthenticationService.Setup(service => service.ResetPasswordAsync(It.IsAny<ResetPasswordRequest>()))
-            .ReturnsAsync(new Response<AuthenticationResponse>(expectedResponse));
+            .ReturnsAsync(new ResponseR<AuthenticationResponse>(expectedResponse));
 
         return mockAuthenticationService;
     }

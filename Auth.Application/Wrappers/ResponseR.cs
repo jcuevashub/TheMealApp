@@ -1,19 +1,19 @@
 ﻿namespace Auth.Application.Wrappers;
 
-public class Response<T>
+public class ResponseR<T>
 {
-    public Response()
+    public ResponseR()
     {
     }
 
-    public Response(T data, string message = null)
+    public ResponseR(T data, string message = null)
     {
         Status = true;
         Message = message;
         Data = data;
     }
 
-    public Response(bool status, string message)
+    public ResponseR(bool status, string message)
     {
         Status = status;
         Message = message;

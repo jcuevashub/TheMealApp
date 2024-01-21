@@ -37,7 +37,7 @@ public class AuthControllerTest
 
         // Assert
         var okResult = Assert.IsType<OkObjectResult>(actionResult);
-        var response = Assert.IsType<Response<AuthenticationResponse>>(okResult.Value);
+        var response = Assert.IsType<ResponseR<AuthenticationResponse>>(okResult.Value);
         response.Status.ShouldBe(true);
     }
 
@@ -59,7 +59,7 @@ public class AuthControllerTest
 
         // Assert
         var okResult = Assert.IsType<OkObjectResult>(actionResult);
-        var response = Assert.IsType<Response<AuthenticationResponse>>(okResult.Value);
+        var response = Assert.IsType<ResponseR<AuthenticationResponse>>(okResult.Value);
         response.Status.ShouldBe(true);
     }
 
@@ -77,7 +77,7 @@ public class AuthControllerTest
 
         // Assert
         var okResult = Assert.IsType<OkObjectResult>(actionResult);
-        var response = Assert.IsType<Response<AuthenticationResponse>>(okResult.Value);
+        var response = Assert.IsType<ResponseR<AuthenticationResponse>>(okResult.Value);
         response.Status.ShouldBe(true);
     }
 
@@ -95,7 +95,7 @@ public class AuthControllerTest
 
         // Assert
         var okResult = Assert.IsType<OkObjectResult>(actionResult);
-        var response = Assert.IsType<Response<string>>(okResult.Value);
+        var response = Assert.IsType<ResponseR<string>>(okResult.Value);
         response.Status.ShouldBe(true);
     }
 
@@ -113,7 +113,7 @@ public class AuthControllerTest
 
         // Assert
         var okResult = Assert.IsType<OkObjectResult>(actionResult);
-        var response = Assert.IsType<Response<string>>(okResult.Value);
+        var response = Assert.IsType<ResponseR<string>>(okResult.Value);
         response.Status.ShouldBe(true);
     }
 
@@ -133,7 +133,7 @@ public class AuthControllerTest
 
         // Assert
         var okResult = Assert.IsType<OkObjectResult>(actionResult);
-        var response = Assert.IsType<Response<AuthenticationResponse>>(okResult.Value);
+        var response = Assert.IsType<ResponseR<AuthenticationResponse>>(okResult.Value);
         response.Status.ShouldBe(true);
     }
 
@@ -153,7 +153,7 @@ public class AuthControllerTest
 
         // Assert
         var okResult = Assert.IsType<OkObjectResult>(actionResult);
-        var response = Assert.IsType<Response<AuthenticationResponse>>(okResult.Value);
+        var response = Assert.IsType<ResponseR<AuthenticationResponse>>(okResult.Value);
         response.Status.ShouldBe(true);
     }
 

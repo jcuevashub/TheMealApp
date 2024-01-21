@@ -6,4 +6,4 @@ namespace Auth.Application.Queries;
 
 public sealed record GetUserRequest(
     Guid Id
- ) : IRequest<Response<UserResponse>>;
+ ) : IRequest<ResponseR<UserResponse>>;

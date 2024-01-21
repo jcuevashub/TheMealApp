@@ -6,12 +6,12 @@ namespace Auth.Application.Interfaces.Services;
 
 public interface IAuthenticationService
 {
-    Task<Response<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request);
-    Task<Response<AuthenticationResponse>> RefreshTokenAsync(RefreshTokenRequest request);
-    Task<Response<AuthenticationResponse>> AuthenticationResponse(User user, string message);
-    Task<Response<string>> RevokeTokenAsync(RevokeTokenRequest request);
-    Task<Response<string>> ForgotPasswordAsync(ForgotPasswordRequest request);
-    Task<Response<AuthenticationResponse>> ResetPasswordAsync(ResetPasswordRequest resetPassword);
+    Task<ResponseR<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request);
+    Task<ResponseR<AuthenticationResponse>> RefreshTokenAsync(RefreshTokenRequest request);
+    Task<ResponseR<AuthenticationResponse>> AuthenticationResponse(User user, string message);
+    Task<ResponseR<string>> RevokeTokenAsync(RevokeTokenRequest request);
+    Task<ResponseR<string>> ForgotPasswordAsync(ForgotPasswordRequest request);
+    Task<ResponseR<AuthenticationResponse>> ResetPasswordAsync(ResetPasswordRequest resetPassword);
 
 }
 

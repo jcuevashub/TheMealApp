@@ -405,3 +405,8 @@ drive/.system/system/lsa.hiv
 *.bin
 *.v2
 Catalog.Application/bin
+*.pdb
+*.dll
+*.txt
+*.json
+*.cache
