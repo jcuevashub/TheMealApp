@@ -1,16 +1,5 @@
 version: "3.4"
 services:
-  sqlserver:
-    image: "mcr.microsoft.com/mssql/server:2022-latest"
-    environment:
-      ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: "sa12345678"
-      MSSQL_PID: "Express"
-    ports:
-      - "1433:1433"
-    restart: always
-    volumes:
-      - './drive:/var/opt/mssql'
   postgres:
     image: postgres:latest
     ports:
