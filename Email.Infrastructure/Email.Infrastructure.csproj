@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Email.Shared\Email.Shared.csproj" />
     <ProjectReference Include="..\EventBus.Messages\EventBus.Messages.csproj" />
   </ItemGroup>
 
