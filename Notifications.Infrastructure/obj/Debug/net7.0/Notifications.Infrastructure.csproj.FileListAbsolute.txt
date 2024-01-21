@@ -1,0 +1,12 @@
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\bin\Debug\net7.0\Notifications.Infrastructure.deps.json
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\bin\Debug\net7.0\Notifications.Infrastructure.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\bin\Debug\net7.0\Notifications.Infrastructure.pdb
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\Notifications.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\Notifications.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\Notifications.Infrastructure.AssemblyInfo.cs
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\Notifications.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\Notifications.Infrastructure.sourcelink.json
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\Notifications.Infrastructure.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\refint\Notifications.Infrastructure.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\Notifications.Infrastructure.pdb
+C:\Users\jacks\Documents\GitHub\TheMealApp\Notifications.Infrastructure\obj\Debug\net7.0\ref\Notifications.Infrastructure.dll

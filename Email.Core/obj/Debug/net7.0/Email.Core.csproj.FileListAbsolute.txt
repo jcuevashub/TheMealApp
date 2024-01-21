@@ -1,0 +1,12 @@
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\bin\Debug\net7.0\Email.Core.deps.json
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\bin\Debug\net7.0\Email.Core.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\bin\Debug\net7.0\Email.Core.pdb
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\Email.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\Email.Core.AssemblyInfoInputs.cache
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\Email.Core.AssemblyInfo.cs
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\Email.Core.csproj.CoreCompileInputs.cache
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\Email.Core.sourcelink.json
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\Email.Core.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\refint\Email.Core.dll
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\Email.Core.pdb
+C:\Users\jacks\Documents\GitHub\TheMealApp\Email.Core\obj\Debug\net7.0\ref\Email.Core.dll
