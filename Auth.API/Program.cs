@@ -1,4 +1,5 @@
 using Auth.API.Extensions;
+using Auth.API.Notification;
 using Auth.Application;
 using Auth.Infrastructure;
 using Auth.Infrastructure.Context;
@@ -14,6 +15,7 @@ builder.Services.AddSharedInfrastructure(builder.Configuration);
 builder.Services.ConfigureApiBehavior();
 builder.Services.ConfigureCorsPolicy();
 builder.Services.AddJwtTokenAuthentication(builder.Configuration);
+builder.Services.AddSignalR();
 
 // Add services to the container.
 
@@ -35,6 +37,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<NotificationHub>("/notificationHub");
+
+});
 
 app.UseHttpsRedirection();
 

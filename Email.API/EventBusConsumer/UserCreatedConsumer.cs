@@ -26,7 +26,7 @@ public class UserCreatedConsumer : IConsumer<UserCreated>
         {
             From = "TheMealApp <support@themealapp.com>",
             To = user.Email,
-            Subject = "New user",
+            Subject = "New users",
             Body = $"Welcome {user.FirstName} {user.LastName}"
         };
 

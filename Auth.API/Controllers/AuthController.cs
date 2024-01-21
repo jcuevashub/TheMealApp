@@ -1,4 +1,5 @@
 ﻿using Auth.API.Controllers.BaseController;
+using Auth.API.Notification;
 using Auth.Application.Commands;
 using Auth.Application.DTOs;
 using Auth.Application.Interfaces.Services;
@@ -6,23 +7,31 @@ using Auth.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 namespace Auth.API.Controllers;
 
 [Route("/v1/auth")]
 public class AuthController : BaseApiController
 {
+    private readonly IHubContext<NotificationHub> _hubContext;
+
     private readonly IAuthenticationService _authenticationService;
-    public AuthController(IAuthenticationService authenticationService, IMediator mediator) : base(mediator)
+    public AuthController(IAuthenticationService authenticationService, IMediator mediator, IHubContext<NotificationHub> hubContext) : base(mediator)
     {
         _authenticationService = authenticationService;
+        _hubContext = hubContext;
+
     }
 
     [AllowAnonymous]
     [HttpPost("sign-in")]
     public async Task<IActionResult> AuthenticateAsync(AuthenticationRequest request)
     {
-        return Ok(await _authenticationService.AuthenticateAsync(request));
+        var response = await _authenticationService.AuthenticateAsync(request);
+        await _hubContext.Clients.All.SendAsync("ReceiveMessage", request.Email, "User logged in");
+
+        return Ok(response);
     }
 
     [AllowAnonymous]
@@ -31,6 +40,8 @@ public class AuthController : BaseApiController
         CancellationToken cancellationToken)
     {
         var response = await Mediator.Send(request, cancellationToken);
+        await _hubContext.Clients.All.SendAsync("ReceiveMessage", request.FirstName, "User signed up");
+
         return Ok(response);
     }
 
