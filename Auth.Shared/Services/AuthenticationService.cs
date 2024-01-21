@@ -14,7 +14,7 @@ using System.Text;
 
 namespace Auth.Shared.Services;
 
-public sealed class AuthenticationService
+public sealed class AuthenticationService : IAuthenticationService
 {
     private const int RefreshTokenSize = 64;
     private readonly IUserRepositoryAsync _userRepositoryAsync;
@@ -95,7 +95,7 @@ public sealed class AuthenticationService
         return new Response<string>(true, "Please check your email for password reset instructions.");
     }
 
-    public async Task<Response<AuthenticationResponse>> RefreshTokenAsync(RefreshTokenRequest request, string ipAddress)
+    public async Task<Response<AuthenticationResponse>> RefreshTokenAsync(RefreshTokenRequest request)
     {
 
         var userToken =
@@ -137,10 +137,10 @@ public sealed class AuthenticationService
         return new Response<AuthenticationResponse>(response, "Token Refreshed Successful.");
     }
 
-    public async Task<Response<AuthenticationResponse>> ResetPasswordAsync(ResetPasswordRequest request, string ipAddress)
+    public async Task<Response<AuthenticationResponse>> ResetPasswordAsync(ResetPasswordRequest request)
     {
 
-        var user = await _userRepositoryAsync.GetAsync(request.Id);
+        var user = await _userRepositoryAsync.GetByIdAsync(request.Id);
 
         if (user == null || user.IsDeleted == true)
             throw new ValidationException("User not found.");

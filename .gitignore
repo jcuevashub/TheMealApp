@@ -400,3 +400,7 @@ drive/.system/instance_id
 drive/.system/system/lsa.hiv
 *.hiv
 *.hiv
+*.json
+*.json
+*.bin
+*.v2

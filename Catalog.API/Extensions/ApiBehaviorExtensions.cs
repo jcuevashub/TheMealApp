@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Auth.API.Extensions;
+namespace Catalog.API.Extensions;
 public static class ApiBehaviorExtensions
 {
     public static void ConfigureApiBehavior(this IServiceCollection services)

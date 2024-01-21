@@ -1,4 +1,4 @@
-﻿namespace Auth.Application.Wrappers;
+﻿namespace Catalog.Application.Wrappers;
 
 public class PagedResponse<T> : Response<T>
 {

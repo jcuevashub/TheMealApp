@@ -1,4 +1,4 @@
-﻿namespace Auth.API.Extensions;
+﻿namespace Catalog.API.Extensions;
 
 public static class CorsPolicyExtensions
 {

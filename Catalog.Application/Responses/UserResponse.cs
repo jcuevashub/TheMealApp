@@ -1,4 +1,4 @@
-﻿namespace Auth.Application.Responses;
+﻿namespace Catalog.Application.Responses;
 
 public sealed record UserResponse
 {

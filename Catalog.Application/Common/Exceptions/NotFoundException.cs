@@ -1,4 +1,4 @@
-﻿namespace Auth.Application.Common.Exceptions;
+﻿namespace Catalog.Application.Common.Exceptions;
 
 public class NotFoundException : Exception
 {

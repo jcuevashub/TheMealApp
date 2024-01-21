@@ -1,10 +1,10 @@
-﻿using Auth.Application.Common.Behaviors;
+﻿using Catalog.Application.Common.Behaviors;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace Auth.Application;
+namespace Catalog.Application;
 
 public static class ServiceExtensions
 {
