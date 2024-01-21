@@ -7,8 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.12" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Catalog.Application\Catalog.Application.csproj" />
+    <ProjectReference Include="..\Catalog.Infrastructure\Catalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\Catalog.Shared\Catalog.Shared.csproj" />
   </ItemGroup>
 
 </Project>
