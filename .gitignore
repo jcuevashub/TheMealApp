@@ -404,3 +404,4 @@ drive/.system/system/lsa.hiv
 *.json
 *.bin
 *.v2
+Catalog.Application/bin
