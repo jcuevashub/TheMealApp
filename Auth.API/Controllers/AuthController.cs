@@ -69,7 +69,6 @@ public class AuthController : BaseApiController
         return Ok(await _authenticationService.ResetPasswordAsync(resetPassword));
     }
 
-    [Authorize]
     [HttpGet("current-user")]
     public async Task<IActionResult> CurrentUserAsync(CancellationToken cancellationToken)
     {

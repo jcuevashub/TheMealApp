@@ -44,7 +44,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 app.UseAuthentication();
+app.UseCors();
 app.MapHub<NotificationHub>("/notificationHub");
 app.MapControllers();
-
 app.Run();
