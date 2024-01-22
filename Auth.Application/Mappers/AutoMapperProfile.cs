@@ -1,5 +1,6 @@
 ﻿using Auth.Application.Commands;
 using Auth.Application.DTOs;
+using Auth.Application.Responses;
 using Auth.Core.Entities;
 using AutoMapper;
 using EventBus.Messages.Events;
@@ -13,6 +14,7 @@ public class AutoMapperProfile : Profile
         CreateMap<CreateUserRequest, User>();
         CreateMap<CreateUserRequest, UserCreated>();
         CreateMap<User, AuthenticationResponse>();
+        CreateMap<User, UserResponse>();
     }
 }
 
