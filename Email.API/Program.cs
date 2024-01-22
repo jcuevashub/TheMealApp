@@ -4,11 +4,16 @@ using Email.Infrastructure;
 using Email.Shared;
 using MassTransit;
 using Email.API.EventBusConsumer;
+using Catalog.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigurePersistence(builder.Configuration);
 builder.Services.ConfigureApplication();
 builder.Services.AddSharedInfrastructure(builder.Configuration);
+
+
+builder.Services.ConfigureApiBehavior();
+builder.Services.ConfigureCorsPolicy();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -46,7 +51,7 @@ app.UseHangfireDashboard();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseCors();
 app.MapControllers();
 
 app.Run();
