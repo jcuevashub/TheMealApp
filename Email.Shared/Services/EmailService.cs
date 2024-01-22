@@ -1,8 +1,8 @@
-﻿using System.Net;
-using System.Net.Mail;
-using Email.Application.Interfaces.Services;
+﻿using Email.Application.Interfaces.Services;
 using Email.Core.Dtos;
 using Microsoft.Extensions.Options;
+using System.Net;
+using System.Net.Mail;
 
 
 namespace Email.Shared;
@@ -18,23 +18,31 @@ public class EmailService : IEmailService
 
     public async Task SendEmailAsync(EmailMessage message)
     {
-        var mailMessage = new MailMessage
+        try
         {
-            From = new MailAddress(_emailSettings.Sender, _emailSettings.SenderName),
-            Subject = message.Subject,
-            Body = message.Body,
-            IsBodyHtml = true
-        };
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress(message.From, _emailSettings.SenderName),
+                Subject = message.Subject,
+                Body = message.Body,
+                IsBodyHtml = true
+            };
 
-        mailMessage.To.Add(new MailAddress(message.To));
+            mailMessage.To.Add(new MailAddress(message.To));
 
-        using var smtpClient = new SmtpClient(_emailSettings.MailServer, _emailSettings.MailPort)
+            using var smtpClient = new SmtpClient(_emailSettings.MailServer, _emailSettings.MailPort)
+            {
+                Credentials = new NetworkCredential(_emailSettings.Sender, _emailSettings.Password),
+                EnableSsl = true
+            };
+
+            await smtpClient.SendMailAsync(mailMessage);
+        }
+        catch (Exception e)
         {
-            Credentials = new NetworkCredential(_emailSettings.Sender, _emailSettings.Password),
-            EnableSsl = true
-        };
 
-        await smtpClient.SendMailAsync(mailMessage);
+            throw new Exception(e.ToString());
+        }
     }
 }
 
