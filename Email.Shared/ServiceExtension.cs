@@ -12,7 +12,8 @@ public static class ServiceExtension
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddTransient<ISendEmailJob, SendEmailJob>();
-        services.AddSingleton<IEmailService>(sp => new MailgunEmailService(configuration["Mailgun:Domain"]!, configuration["Mailgun:ApiKey"]!));
+        services.AddSingleton<IEmailService,  EmailService>();
+     
     }
 
 }

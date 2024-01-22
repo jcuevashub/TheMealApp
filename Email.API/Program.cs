@@ -10,7 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigurePersistence(builder.Configuration);
 builder.Services.ConfigureApplication();
 builder.Services.AddSharedInfrastructure(builder.Configuration);
-
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddTransient<EmailService>();
 
 builder.Services.ConfigureApiBehavior();
 builder.Services.ConfigureCorsPolicy();
