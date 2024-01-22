@@ -38,17 +38,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapHub<NotificationHub>("/notificationHub");
 
-});
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 app.UseAuthentication();
-
+app.MapHub<NotificationHub>("/notificationHub");
 app.MapControllers();
 
 app.Run();

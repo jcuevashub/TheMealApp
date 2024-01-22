@@ -6,7 +6,7 @@ public interface ITheMealService
 {
     Task<List<MealDto>> SearchMealByNameAsync(string Name);
     Task<List<MealDto>> SearchMealCategoryAsync(string Category);
-    Task<List<MealDto>> FetchMealDataAsync(string Country);
+    Task<List<MealDto>> FetchMealDataAsync();
     Task<List<MealCategoryDto>> FetchMealCategoriesAsync();
     Task<MealDto> FetchMealDetailByIdAsync(string Id);
 

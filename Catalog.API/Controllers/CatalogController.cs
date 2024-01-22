@@ -13,10 +13,10 @@ public class CatalogController : ControllerBase
         _theMealService = theMealService;
     }
 
-    [HttpGet("get-meals/country")]
-    public async Task<IActionResult> GetMealByCountry(string country)
+    [HttpGet("get-meals")]
+    public async Task<IActionResult> GetMeals()
     {
-        return Ok(await _theMealService.FetchMealDataAsync(country));
+        return Ok(await _theMealService.FetchMealDataAsync());
 
     }
 

@@ -17,7 +17,6 @@ public class TheMealService : ITheMealService
     {
         string apiUrl = $"https://www.themealdb.com/api/json/v1/1/categories.php";
 
-
         try
         {
             var responseString = await _httpClient.GetStringAsync(apiUrl);
@@ -44,19 +43,17 @@ public class TheMealService : ITheMealService
             return categories;
 
         }
-        catch (Exception)
+        catch (Exception e)
         {
 
-            Console.WriteLine($"Error fetching meals data");
+            throw new Exception($"Error fetching meals data: {e}");
 
         }
-        return null;
     }
 
-    public async Task<List<MealDto>> FetchMealDataAsync(string country)
+    public async Task<List<MealDto>> FetchMealDataAsync()
     {
-        string apiUrl = $"https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian";
-
+        string apiUrl = $"https://www.themealdb.com/api/json/v1/1/random.php";
 
         try
         {
@@ -75,7 +72,10 @@ public class TheMealService : ITheMealService
                     {
                         Id = meal["idMeal"],
                         Name = meal["strMeal"],
-                        MealThumb = meal["strMealThumb"]
+                        MealThumb = meal["strMealThumb"],
+                        Category = meal["strCategory"],
+                        Area = meal["strArea"],
+                        Instructions = meal["strInstructions"]
                     });
                 }
             }
@@ -83,13 +83,12 @@ public class TheMealService : ITheMealService
             return meals;
 
         }
-        catch (Exception)
+        catch (Exception e)
         {
 
-            Console.WriteLine($"Error fetching meals data");
+            throw new Exception($"Error fetching meals data: {e}");
 
         }
-        return null;
 
     }
 
